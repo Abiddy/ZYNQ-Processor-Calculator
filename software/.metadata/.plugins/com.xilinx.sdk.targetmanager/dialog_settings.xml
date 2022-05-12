@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="calculator_app_system-bitFile" value="${project_loc:calculator_app}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="calculator_app_system-bmmFile" value=""/>
+	<item key="calculator_app_system-target" value="Local"/>
+	<item key="calculator_app_system-device" value="Auto Detect"/>
+	<item key="calculator_app_system-partial_bit" value="false"/>
+	<item key="calculator_app_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="calculator1_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351B3FED8A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351B3FED8A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351B3FED8A-13722093-0&quot;}}]}"/>
+	<item key="calc_system-bitFile" value="${project_loc:calc}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="calc_system-bmmFile" value=""/>
+	<item key="calc_system-target" value="Local"/>
+	<item key="calc_system-device" value="Auto Detect"/>
+	<item key="calc_system-partial_bit" value="false"/>
+	<item key="calc_system-skip_rev_check" value="false"/>
+	<item key="calculator1_system-bitFile" value="${project_loc:calculator1}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="calculator1_system-bmmFile" value=""/>
+	<item key="calculator1_system-target" value="Local"/>
+	<item key="calculator1_system-device" value="Auto Detect"/>
+	<item key="calculator1_system-partial_bit" value="false"/>
+	<item key="calculator1_system-skip_rev_check" value="false"/>
+</section>

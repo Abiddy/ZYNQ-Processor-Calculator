@@ -1,0 +1,249 @@
+
+*** Running vivado
+    with args -log design_1_calculator_ip_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_calculator_ip_0_1.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_calculator_ip_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/ip_repo/calculator_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/zain/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_calculator_ip_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2871.418 ; gain = 0.000 ; free physical = 174 ; free virtual = 4926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_calculator_ip_0_1' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_calculator_ip_0_1/synth/design_1_calculator_ip_0_1.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'calculator_ip_v1_0' declared at '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0.vhd:5' bound to instance 'U0' of component 'calculator_ip_v1_0' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_calculator_ip_0_1/synth/design_1_calculator_ip_0_1.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'calculator_ip_v1_0' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0.vhd:49]
+WARNING: [Synth 8-5640] Port 's_axi_signals' is missing in component declaration [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0.vhd:52]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'calculator_ip_v1_0_S00_AXI' declared at '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:5' bound to instance 'calculator_ip_v1_0_S00_AXI_inst' of component 'calculator_ip_v1_0_S00_AXI' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'calculator_ip_v1_0_S00_AXI' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-226] default block is never used [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:233]
+INFO: [Synth 8-226] default block is never used [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:363]
+INFO: [Synth 8-3491] module 'calculator' declared at '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/src/zync_calculator.vhd:21' bound to instance 'calculator_0' of component 'calculator' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'calculator' [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/src/zync_calculator.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'calculator' (1#1) [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/src/zync_calculator.vhd:28]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:231]
+INFO: [Synth 8-256] done synthesizing module 'calculator_ip_v1_0_S00_AXI' (2#1) [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'calculator_ip_v1_0' (3#1) [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ipshared/58e7/hdl/calculator_ip_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_calculator_ip_0_1' (4#1) [/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_calculator_ip_0_1/synth/design_1_calculator_ip_0_1.vhd:82]
+WARNING: [Synth 8-7129] Port S_AXI_SIGNALS in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module calculator_ip_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2871.418 ; gain = 0.000 ; free physical = 416 ; free virtual = 5110
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2871.418 ; gain = 0.000 ; free physical = 1210 ; free virtual = 5906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2871.418 ; gain = 0.000 ; free physical = 1210 ; free virtual = 5906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2871.418 ; gain = 0.000 ; free physical = 1201 ; free virtual = 5899
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2935.348 ; gain = 0.000 ; free physical = 1106 ; free virtual = 5813
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2935.348 ; gain = 0.000 ; free physical = 1105 ; free virtual = 5812
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1173 ; free virtual = 5881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1173 ; free virtual = 5881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1175 ; free virtual = 5884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1164 ; free virtual = 5876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_calculator_ip_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1144 ; free virtual = 5866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 993 ; free virtual = 5723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 993 ; free virtual = 5722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     1|
+|3     |LUT2   |     2|
+|4     |LUT3   |    33|
+|5     |LUT4   |    18|
+|6     |LUT6   |    36|
+|7     |FDRE   |   167|
+|8     |FDSE   |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 994 ; free virtual = 5724
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2935.348 ; gain = 0.000 ; free physical = 1049 ; free virtual = 5779
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2935.348 ; gain = 63.930 ; free physical = 1049 ; free virtual = 5779
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2935.348 ; gain = 0.000 ; free physical = 1041 ; free virtual = 5774
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2935.348 ; gain = 0.000 ; free physical = 1071 ; free virtual = 5805
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 60920375
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 2935.348 ; gain = 64.031 ; free physical = 1274 ; free virtual = 6008
+INFO: [Common 17-1381] The checkpoint '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.runs/design_1_calculator_ip_0_1_synth_1/design_1_calculator_ip_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_calculator_ip_0_1, cache-ID = bc228e00ca538145
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/zain/workdir/ZYNQ-Processor-Calculator/hardware/project_1/project_1.runs/design_1_calculator_ip_0_1_synth_1/design_1_calculator_ip_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_calculator_ip_0_1_utilization_synth.rpt -pb design_1_calculator_ip_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 07:52:39 2022...
