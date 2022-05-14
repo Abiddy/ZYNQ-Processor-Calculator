@@ -1,4 +1,4 @@
-10:32:01 **** Incremental Build of configuration Debug for project calc_proj ****
+14:41:50 **** Incremental Build of configuration Debug for project calc_proj ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -24,9 +24,9 @@ Finished building target: calc_proj.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size calc_proj.elf  |tee "calc_proj.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22413	   1144	  22568	  46125	   b42d	calc_proj.elf
+  22593	   1144	  22568	  46305	   b4e1	calc_proj.elf
 Finished building: calc_proj.elf.size
  
 
-10:32:02 Build Finished (took 774ms)
+14:41:51 Build Finished (took 771ms)
 

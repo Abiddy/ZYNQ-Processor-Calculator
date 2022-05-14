@@ -10,30 +10,30 @@ int main()
  init_platform();
  xil_printf("Calculator Test\n\r");
  // CLEAR = 0x00000001 ; LOAD = 0x0000002 ; ADD = 0x00000004
- xil_printf("Clear => 1 \n\r");
 
- //Xil_Out32(*(baseaddr_p+0) ,0x00000000);
+ xil_printf("Signal : Clear \n\r");
+
  Xil_Out32(*(baseaddr_p+0) ,0x00000001);  // register 0
+ Xil_Out32(*(baseaddr_p+1) ,0x00000000);
  //Xil_Out32(*(baseaddr_p+4) ,0x00000006);  // register 1 -> dIn
- xil_printf("Reading Input => 0x%08x \n\r", Xil_In32(*(baseaddr_p+8))); // register 2
+ xil_printf("Reading Input => 0x%08x \n\r", Xil_In32(*(baseaddr_p+2))); // register 2
 
-
- xil_printf("Add => 1, Data Input => 5 \n\r");
- Xil_Out32(*(baseaddr_p+4), 0x00000005);  // Data Input is 5
- Xil_Out32(*(baseaddr_p+0), 0x00000002); // register 0
- Xil_Out32(*(baseaddr_p+0), 0x00000004);  // register 1
-
-
- //Xil_Out32(*(baseaddr_p+0), 0x00000004);
-// Xil_Out32(*(baseaddr_p+4) ,0x0000002);  // register 1
- // Read calculator output from register 2
- xil_printf("Reading Output => 0x%08x \n\r", Xil_In32(*(baseaddr_p+8))); // register 2
-
- xil_printf("Clear => 1 \n\r");
+ xil_printf("Data Input : 2 \n\rSignal : Load \n\r");
  Xil_Out32(*(baseaddr_p+0) ,0x00000002);  // register 0
-// Xil_Out32(*(baseaddr_p+4) ,0x0000002);  // register 1
- // Read calculator output from register 2
- xil_printf("Reading Output => 0x%08x \n\r", Xil_In32(*(baseaddr_p+8))); // register 2
+ Xil_Out32(*(baseaddr_p+1) ,0x00000002);
+ //Xil_Out32(*(baseaddr_p+4) ,0x00000006);  // register 1 -> dIn
+ xil_printf("Reading Input => 0x%08x \n\r", Xil_In32(*(baseaddr_p+2))); // register 2
+
+
+ xil_printf("Data Input : 2 \n\rSignal: Add \n\r");
+
+ Xil_Out32(*(baseaddr_p+1), 0x00000002);  // Data Input is 5
+ Xil_Out32(*(baseaddr_p+0), 0x00000004); // register 0
+ xil_printf("Output => 0x%08x \n\r", Xil_In32(*(baseaddr_p+2))); // register 2
+
+ xil_printf("Signal: Clear \n\r");
+ Xil_Out32(*(baseaddr_p+0) ,0x00000000);  // register 0
+ xil_printf("Output => 0x%08x \n\r", Xil_In32(*(baseaddr_p+8))); // register 2
 
 
 
@@ -43,9 +43,9 @@ int main()
 //  xil_printf("Add => HIGH \n\r");
 //  // Write calculator data inputs to register 1
 //  *(baseaddr_p+1) = 0x000000003;
-//  xil_printf("Writing Input =>  0x%08x \n\r", *(baseaddr_p+4));
+//  xil_printf("Writing Input =>  0x%08x \n\r", *(baseaddr_p+1));
 //  // Read calculator output from register 2
-//  xil_printf("Reading Output => 0x%08x \n\r", *(baseaddr_p+8));
+//  xil_printf("Reading Output => 0x%08x \n\r", *(baseaddr_p+2));
 //
 // //clearing
 // *(baseaddr_p+0) = 0x00000001;

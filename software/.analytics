@@ -95,3 +95,33 @@ timestamp=[2022-05-12 10:23:10], mode=BUILD, duration=0:00:00.882, duration_ms=8
 timestamp=[2022-05-12 10:24:01], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=calc_proj, configuration=Debug, clean_build=false}
 timestamp=[2022-05-12 10:25:30], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=calc_proj, configuration=Debug, clean_build=false}
 timestamp=[2022-05-12 10:32:02], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 10:55:50], mode=BUILD, duration=0:00:00.826, duration_ms=826, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:00:01], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:00:58], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:02:08], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:03:28], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:04:07], mode=BUILD, duration=0:00:00.738, duration_ms=738, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 11:05:42], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 12:35:43], mode=PLATFORM_GENERATION, duration=0:00:08.574, duration_ms=8574, data={name=design_1_wrapper_4}
+timestamp=[2022-05-12 12:35:43], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=calc_proj, configuration=Debug, clean_build=true}
+timestamp=[2022-05-12 12:35:57], mode=PLATFORM_GENERATION, duration=0:00:13.561, duration_ms=13561, data={name=design_1_wrapper_4}
+timestamp=[2022-05-12 12:36:00], mode=BUILD, duration=0:00:00.788, duration_ms=788, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-12 12:39:41], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:18:26], mode=WORKBENCH_START, duration=0:00:11.416, duration_ms=11416, data={}
+timestamp=[2022-05-14 14:18:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.032, duration_ms=32, data={}
+timestamp=[2022-05-14 14:18:27], mode=WORKBENCH_UI_INIT, duration=0:00:01.317, duration_ms=1317, data={editors_count=4, platform_editors_count=0, projects_count=16, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,calc,calc_proj,calc_proj_system,calc_system,calculator,calculator1,calculator1_system,calculator_app,calculator_app_system,calculator_system,design_1_wrapper,design_1_wrapper_1,design_1_wrapper_2,design_1_wrapper_3,design_1_wrapper_4}
+timestamp=[2022-05-14 14:19:16], mode=BUILD, duration=0:00:00.866, duration_ms=866, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:20:01], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:24:19], mode=BUILD, duration=0:00:00.691, duration_ms=691, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:25:40], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:26:39], mode=BUILD, duration=0:00:00.675, duration_ms=675, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:27:40], mode=BUILD, duration=0:00:00.676, duration_ms=676, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:27:55], mode=BUILD, duration=0:00:00.724, duration_ms=724, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:29:28], mode=PLATFORM_GENERATION, duration=0:00:08.623, duration_ms=8623, data={name=design_1_wrapper_4}
+timestamp=[2022-05-14 14:29:29], mode=BUILD, duration=0:00:00.572, duration_ms=572, data={name=calc_proj, configuration=Debug, clean_build=true}
+timestamp=[2022-05-14 14:29:45], mode=PLATFORM_GENERATION, duration=0:00:12.829, duration_ms=12829, data={name=design_1_wrapper_4}
+timestamp=[2022-05-14 14:29:48], mode=BUILD, duration=0:00:00.890, duration_ms=890, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:30:18], mode=BUILD, duration=0:00:00.728, duration_ms=728, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:35:29], mode=BUILD, duration=0:00:00.778, duration_ms=778, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:39:30], mode=BUILD, duration=0:00:00.836, duration_ms=836, data={name=calc_proj, configuration=Debug, clean_build=false}
+timestamp=[2022-05-14 14:41:51], mode=BUILD, duration=0:00:00.778, duration_ms=778, data={name=calc_proj, configuration=Debug, clean_build=false}
